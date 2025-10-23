@@ -1,0 +1,26 @@
+.highlights {
+  padding: 6rem 10%;
+  background: #fff8f2;
+  text-align: center;
+}
+
+.highlight-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.highlight {
+  background: #fbe9e7;
+  border: 2px solid #d4af37;
+  border-radius: 15px;
+  padding: 2rem;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.highlight:hover {
+  transform: translateY(-8px);
+}

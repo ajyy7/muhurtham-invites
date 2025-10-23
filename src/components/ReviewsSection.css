@@ -1,0 +1,52 @@
+.reviews-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #fff8f2, #fbe9e7);
+  border-top: 2px solid #ccc; /* if you still want the top border */
+}
+
+.reviews-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #640018;
+  margin-bottom: 2rem;
+}
+
+.reviews-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 2rem;
+  scroll-behavior: smooth;
+  justify-content: center;   /* CENTER the cards in the available viewport */
+  align-items: stretch;
+}
+.reviews-scroll .review-card {
+  flex: 0 0 320px;  /* fixed card width */
+  min-width: 300px;
+}
+
+.reviews-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  flex: 0 0 300px;
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.review-name {
+  font-weight: 600;
+  color: #640018;
+}
+
+.reviews-scroll::-webkit-scrollbar { display: none; }

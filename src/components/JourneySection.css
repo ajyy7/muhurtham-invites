@@ -1,0 +1,36 @@
+.journey {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 10%;
+  background-color: #f4f4f6;
+  flex-wrap: wrap;
+}
+
+.journey-content {
+  flex: 1 1 45%;
+}
+
+.journey-content h2 {
+  font-size: 2.8rem;
+  color: #800020;
+  margin-bottom: 1rem;
+}
+
+.journey-content p {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.journey-image {
+  flex: 1 1 45%;
+  text-align: right;
+}
+
+.journey-image img {
+  width: 85%;
+  border-radius: 15px;
+  border: 2px solid #d4af37;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}

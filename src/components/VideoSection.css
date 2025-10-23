@@ -1,0 +1,41 @@
+.video-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+.video-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* darker overlay for text visibility */
+  z-index: -1;
+}
+
+.video-overlay h2 {
+  font-size: 2.6rem;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+.video-overlay p {
+  color: #f0f0f0;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
