@@ -7,7 +7,7 @@ function Hero() {
     
     <section className="hero">
       <video autoPlay loop muted className="hero-video">
-        <source src="/hero-bg.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dzry28yko/video/upload/v1761221379/AZj1TMEaehx5v6IfghR9Tg-AZj1TMEa6Cn1TkV6KOGS-g_qlkxcq.mp4" type="video/mp4" />
       </video>
       <div className="hero-overlay"></div>
       <motion.div

@@ -13,7 +13,7 @@ function JourneySection() {
         </p>
       </div>
       <div className="journey-image">
-        <img src="/gallery6.png" alt="Our Journey" />
+        <img src="https://res.cloudinary.com/dzry28yko/image/upload/v1761222252/gallery6_rtlz7i.png" alt="Our Journey" />
       </div>
     </section>
   );

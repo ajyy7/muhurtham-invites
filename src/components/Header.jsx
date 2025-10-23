@@ -4,7 +4,7 @@ import "./Header.css";
 function Header() {
   return (
     <header className="header">
-      <img src="/logo.png" alt="Logo" className="logo" />
+      <img src="https://res.cloudinary.com/dzry28yko/image/upload/v1761221659/logo_evn514.png" alt="Logo" className="logo" />
       <nav>
         <ul>
           <li><a href="#hero">Home</a></li>
