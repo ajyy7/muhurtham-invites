@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 Muhurtham Invites | All Rights Reserved</p>
+        <p style={{fontSize: '14px'}}>© 2025 Muhurtham Invites | All Rights Reserved</p>
       </div>
     </footer>
   );
