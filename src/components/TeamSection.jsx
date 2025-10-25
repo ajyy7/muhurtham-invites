@@ -15,7 +15,7 @@ function TeamSection() {
         {team.map((member, index) => (
           <div className="team-card" key={index}>
             <img src={member.img} alt={member.name} className="team-img" />
-            <h3>{member.name}</h3>
+            <h4>{member.name}</h4>
             <p>{member.role}</p>
           </div>
         ))}

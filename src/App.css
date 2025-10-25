@@ -2,3 +2,45 @@
   background-color: #fff8f2;
   overflow-x: hidden;
 }
+
+@media (max-width: 768px) {
+  section, .highlights, .team-section, .footer, .reviews {
+    padding: 2.5rem 1.2rem !important;
+  }
+
+  h2, h3 {
+    font-size: 1.4rem !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+  }
+
+  .highlight {
+    width: 100% !important;
+  }
+
+  .team-member img {
+    width: 90px !important;
+    height: 90px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    zoom: 1 !important;
+  }
+
+  section {
+    padding: 2.5rem 1rem !important;
+  }
+
+  h2, h3 {
+    font-size: 1.4rem !important;
+  }
+
+  p {
+    font-size: 0.95rem !important;
+  }
+}

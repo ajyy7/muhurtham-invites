@@ -15,7 +15,7 @@ function ServicesSection() {
       <div className="services-grid">
         {services.map((s, index) => (
           <div className="service-card" key={index}>
-            <h3>{s.title}</h3>
+            <h4>{s.title}</h4>
             <p>{s.desc}</p>
           </div>
         ))}

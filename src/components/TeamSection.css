@@ -47,20 +47,33 @@
 .team-name {
   color: #800020;
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: x-small;
 }
 
 @media (max-width: 768px) {
-  .team-title {
-    font-size: 1.7rem;
+  .team-section {
+    padding: 3rem 1rem;
   }
 
-  .team-img {
-    width: 110px;
-    height: 110px;
+  .team-section h2 {
+    font-size: 1.4rem;
   }
 
-  .team-name {
-    font-size: 0.95rem;
+  .team-grid {
+    justify-content: space-around;
+    gap: 1rem;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-member h4 {
+    font-size: 1rem;
+  }
+
+  .team-member p {
+    font-size: 0.9rem;
   }
 }

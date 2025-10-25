@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from "react";
 import "./Header.css";
 
@@ -42,7 +41,7 @@ function Header() {
           <span></span>
         </div>
 
-        {/* Navigation Links */}
+        {/* Slide-in Navigation Menu */}
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li><a href="#home" onClick={handleLinkClick}>Home</a></li>
           <li><a href="#about" onClick={handleLinkClick}>About</a></li>

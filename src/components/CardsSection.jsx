@@ -21,7 +21,7 @@ export default function CardsSection() {
               <img src={c.image} alt={c.title} className="card-image" />
             </div>
             <div className="card-body">
-              <h3 className="card-title">{c.title}</h3>
+              <h4 className="card-title">{c.title}</h4>
               <p className="card-desc">{c.description}</p>
             </div>
           </article>
