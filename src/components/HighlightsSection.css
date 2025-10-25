@@ -7,9 +7,9 @@
 .highlight-grid {
   display: flex;
   gap: 2rem;
-  justify-content: center;
+  justify-content: center; /* ✅ center on large screens */
   margin-top: 3rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* ✅ normal wrap for desktop */
 }
 
 .highlight {
@@ -18,9 +18,29 @@
   border-radius: 15px;
   padding: 2rem;
   width: 280px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
   transition: transform 0.3s ease;
 }
 
 .highlight:hover {
   transform: translateY(-8px);
+}
+
+/* ✅ MOBILE VIEW FIX */
+@media (max-width: 768px) {
+  .highlight-grid {
+    flex-wrap: nowrap;         /* keep cards in a single line */
+    overflow-x: auto;          /* allow horizontal scroll */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start; /* start scroll smoothly */
+    padding-bottom: 1rem;
+  }
+
+  .highlight {
+    width: 240px;
+    padding: 1.5rem;
+    flex-shrink: 0; /* prevents shrinking */
+  }
 }

@@ -15,25 +15,24 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-/* Footer.css — make key footer lines bright / white */
+
+/* Brighten important footer texts */
 .footer .footer-section p,
 .footer .footer-section .contact-info,
 .footer-bottom p {
-  color: #ffffff;      /* pure white for best contrast */
+  color: #ffffff;
 }
 
-/* If you used separate selectors for email/phone */
-.footer .footer-section a, 
+.footer .footer-section a,
 .footer .footer-section .email,
 .footer .footer-section .phone {
   color: #ffffff;
   text-decoration: none;
 }
 
-
 .footer-section h3,
 .footer-section h4 {
-text-align: center;
+  text-align: center;
   margin-bottom: 1rem;
   color: #d4af37;
 }
@@ -61,7 +60,7 @@ text-align: center;
   margin-top: 2rem;
   padding-top: 1rem;
   color: #f1f1f1;
-  font-size :xx-small;
+  font-size: 0.8rem;
 }
 
 .copyright {
@@ -70,7 +69,28 @@ text-align: center;
   margin-top: 1rem;
 }
 
-@media (min-width: 768px){
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-section h3,
+  .footer-section h4 {
+    font-size: 1.1rem;
+  }
+
+  .footer-section li {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 769px) {
   .footer-container {
     flex-direction: row;
     justify-content: space-between;

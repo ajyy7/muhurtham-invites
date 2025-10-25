@@ -12,7 +12,6 @@
   margin-bottom: 28px;
 }
 
-/* horizontal scroll container with snap behavior */
 .cards-scroll {
   display: flex;
   gap: 20px;
@@ -23,29 +22,27 @@
   justify-content: flex-start;
 }
 
-/* each card */
 .card {
-  min-width: 300px;    /* card width */
-  max-width: 300px;
+  min-width: 280px;
+  max-width: 280px;
   flex: 0 0 auto;
   background: #fff;
   color: #800020;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
   scroll-snap-align: center;
-  transition: transform .25s ease, box-shadow .25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.22);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
 }
 
-/* image wrapper ensures consistent height and scaling */
 .card-image-wrap {
   width: 100%;
-  height: 180px;    /* fixed image display height */
+  height: 200px; /* consistent height */
   overflow: hidden;
   background: #f7f7f7;
 }
@@ -53,11 +50,10 @@
 .card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* ensures image fills box properly */
   display: block;
 }
 
-/* card body */
 .card-body {
   padding: 14px;
   text-align: center;
@@ -75,28 +71,29 @@
   line-height: 1.25;
 }
 
-/* Responsive Fix for Cards Section */
+/* ✅ Mobile Optimization */
 @media (max-width: 768px) {
   .cards-scroll {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* keep horizontal scroll even in mobile */
+    overflow-x: auto;
+    justify-content: flex-start;
   }
 
   .card {
-    width: 90%;
-    margin-bottom: 20px;
+    min-width: 250px;
+    max-width: 250px;
+    margin-right: 16px;
   }
 
-  .card-image {
-    width: 100%;
-    height: auto;
+  .card-image-wrap {
+    height: 160px;
   }
 
   .card-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .card-desc {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }

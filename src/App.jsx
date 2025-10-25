@@ -5,6 +5,8 @@ import JourneySection from "./components/JourneySection";
 import VideoSection from "./components/VideoSection";
 import CardsSection from "./components/CardsSection";
 import ReviewsSection from "./components/ReviewsSection";
+import ServicesSection from "./components/ServicesSection";
+import TeamSection from "./components/TeamSection";
 import HighlightsSection from "./components/HighlightsSection";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -19,6 +21,8 @@ function App() {
 <CardsSection />
 <HighlightsSection />
 <ReviewsSection />
+<ServicesSection />
+<TeamSection />
 <Footer />
     </div>
   );

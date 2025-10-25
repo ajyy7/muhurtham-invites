@@ -29,8 +29,53 @@
 }
 
 .journey-image img {
-  width: 85%;
+  width: 65%;
   border-radius: 15px;
   border: 2px solid #d4af37;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .journey {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+
+  .journey-content, .journey-image {
+    flex: 1 1 100%;
+  }
+
+  .journey-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .journey-content p {
+    font-size: 1rem;
+  }
+
+  .journey-image {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .journey-image img {
+    width: 65%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .journey-content h2 {
+    font-size: 2.3rem;
+  }
+
+  .journey-content p {
+    font-size: 1rem;
+  }
+
+  .journey-image img {
+    width: 65%;
+  }
 }

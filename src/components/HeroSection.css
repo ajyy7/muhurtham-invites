@@ -24,10 +24,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.35); /* slightly lighter than before */
+  background-color: rgba(0, 0, 0, 0.35);
   z-index: -1;
 }
-
 
 .hero-content {
   z-index: 1;
@@ -36,28 +35,22 @@
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  max-width: 90%;
 }
 
 .hero-content h2 {
   font-size: 3rem;
 }
 
-/* HeroSection.css — make tagline clearly visible */
+/* tagline */
 .hero-content p {
   margin: 1rem 0;
-  color: #ffffff;                       /* pure white for max contrast */
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65); /* stronger shadow for legibility */
-  font-size: 1.05rem;
-  z-index: 3;                            /* ensure it sits above overlays */
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+  font-size: 1.1rem;
+  z-index: 3;
   line-height: 1.5;
 }
-
-
-.hero-tagline {
-  color: #ffffff;
-  text-shadow: 0px 1px 3px rgba(0,0,0,0.5); /* makes it pop */
-}
-
 
 .cta-btn {
   background-color: #f9c5d1;
@@ -68,41 +61,46 @@
   font-weight: bold;
   cursor: pointer;
 }
-/* Responsive Design Fixes */
 
-/* Mobile (up to 768px width) */
+/* ✅ Responsive Fixes */
+
+/* Mobile */
 @media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
+  .hero {
+    height: 85vh;
     padding: 20px;
   }
 
-  .hero-section img {
-    width: 100%;
-    height: auto;
+  .hero-content {
+    padding: 1.2rem;
+    border-radius: 8px;
   }
 
-  .hero-section h1 {
-    font-size: 1.5rem;
+  .hero-content h2 {
+    font-size: 1.8rem;
   }
 
-  .hero-section p {
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .cta-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .hero-content h2 {
+    font-size: 2.4rem;
+  }
+
+  .hero-content p {
     font-size: 1rem;
   }
 }
-
-/* Tablet (between 769px and 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px;
-  }
-
-  .hero-section img {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-

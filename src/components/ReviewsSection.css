@@ -2,7 +2,6 @@
   padding: 4rem 2rem;
   text-align: center;
   background: linear-gradient(to right, #fff8f2, #fbe9e7);
-  border-top: 2px solid #ccc; /* if you still want the top border */
 }
 
 .reviews-title {
@@ -10,24 +9,22 @@
   font-weight: 700;
   color: #640018;
   margin-bottom: 2rem;
+  font-family: "Playfair Display", serif;
 }
 
-.reviews-scroll {
+/* Horizontal infinite scroll */
+.reviews-slider {
   display: flex;
   gap: 1.5rem;
-  overflow-x: auto;
-  padding: 1rem 2rem;
-  scroll-behavior: smooth;
-  justify-content: center;   /* CENTER the cards in the available viewport */
-  align-items: stretch;
-}
-.reviews-scroll .review-card {
-  flex: 0 0 320px;  /* fixed card width */
-  min-width: 300px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
 }
 
-.reviews-scroll::-webkit-scrollbar {
-  display: none;
+.review-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: scrollLoop 35s linear infinite;
 }
 
 .review-card {
@@ -49,4 +46,12 @@
   color: #640018;
 }
 
-.reviews-scroll::-webkit-scrollbar { display: none; }
+/* Loop animation */
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

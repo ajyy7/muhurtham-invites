@@ -33,7 +33,7 @@
 }
 
 .hero-logo {
-  width: 84px;     /* smaller and fixed */
+  width: 84px;
   height: auto;
   margin: 0 auto 16px;
   display: block;
@@ -70,6 +70,46 @@
 .hero-content p {
   font-size: 1.2rem;
   margin: 1rem 0;
-  color: #f5f5f5; /* changed from gray to soft white */
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7); /* adds subtle clarity */
+  color: #f5f5f5;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  .hero-logo {
+    width: 60px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-sub {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .hero-cta {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    height: 90vh;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
 }

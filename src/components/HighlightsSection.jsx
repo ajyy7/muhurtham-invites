@@ -7,15 +7,15 @@ function HighlightsSection() {
       <h2>Our Special Touch</h2>
       <div className="highlight-grid">
         <div className="highlight">
-          <h3>Elegant Designs</h3>
+          <h4>Elegant Designs</h4>
           <p>Every invitation is crafted with care and creativity for timeless appeal.</p>
         </div>
         <div className="highlight">
-          <h3>Customization</h3>
+          <h4>Customization</h4>
           <p>Your story, your colors, your style — we make it yours.</p>
         </div>
         <div className="highlight">
-          <h3>Eco-Friendly Prints</h3>
+          <h4>Eco-Friendly Prints</h4>
           <p>We use sustainable materials to celebrate responsibly.</p>
         </div>
       </div>

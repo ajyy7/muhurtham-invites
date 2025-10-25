@@ -1,0 +1,66 @@
+.team-section {
+  background: #fff8f2;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.team-title {
+  font-size: 2.2rem;
+  font-family: "Playfair Display", serif;
+  color: #800020;
+  margin-bottom: 3rem;
+  letter-spacing: 0.5px;
+}
+
+/* Horizontal scroll for profiles */
+.team-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+}
+
+.team-member {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+.team-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d4af37;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.team-img:hover {
+  transform: scale(1.05);
+}
+
+.team-name {
+  color: #800020;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .team-title {
+    font-size: 1.7rem;
+  }
+
+  .team-img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .team-name {
+    font-size: 0.95rem;
+  }
+}

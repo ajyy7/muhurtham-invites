@@ -13,8 +13,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: -2;
@@ -24,7 +24,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45); /* darker overlay for text visibility */
+  background: rgba(0, 0, 0, 0.45);
   z-index: -1;
 }
 
@@ -38,4 +38,42 @@
   color: #f0f0f0;
   margin-top: 1rem;
   font-size: 1.2rem;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .video-section {
+    height: 70vh; /* slightly smaller on mobile */
+    padding: 1rem;
+  }
+
+  .video-overlay h2 {
+    font-size: 1.8rem;
+  }
+
+  .video-overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .video-section {
+    height: 80vh;
+  }
+
+  .video-overlay h2 {
+    font-size: 2.2rem;
+  }
+
+  .video-overlay p {
+    font-size: 1.1rem;
+  }
 }

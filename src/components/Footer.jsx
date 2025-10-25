@@ -17,12 +17,19 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Connect With Us</h4>
           <div className="social-icons">
-            <a href="#"><FaInstagram /></a>
+            <a
+    href="https://www.instagram.com/muhurtham.invites"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <i className="fab fa-instagram"></i>
+  </a>
             <a href="#"><FaFacebookF /></a>
             <a href="mailto:muhurthaminvites@gmail.com"><FaEnvelope /></a>
           </div>
-          <p>Email: muhurthaminvites@gmail.com</p>
-          <p>Phone: +91 98765 43210</p>
+          <p style={{fontSize:'16px'}}>Email: muhurthaminvites@gmail.com</p>
+          <p style={{fontSize:'15px'}}>Phone: +91 8547491297, +91 8281420241, +91 7356437300</p>
         </div>
       </div>
 
