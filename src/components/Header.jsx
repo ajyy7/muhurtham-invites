@@ -44,9 +44,9 @@ function Header() {
         {/* Contact Options (visible on click) */}
         {contactOpen && (
           <div className="contact-popup fade-slide-in">
-            <a href="tel:+919876543210" className="popup-link">📞 Call Us</a>
+            <a href="tel:+918281420241" className="popup-link">📞 Call Us</a>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/918281420241"
               target="_blank"
               rel="noopener noreferrer"
               className="popup-link"
