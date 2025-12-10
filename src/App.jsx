@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import JourneySection from "./components/JourneySection";
 import VideoSection from "./components/VideoSection";
+import AnimatedVideosSection from "./components/AnimatedVideosSection";
+import ECardsSection from "./components/ECardsSection";
 import CardsSection from "./components/CardsSection";
 import ReviewsSection from "./components/ReviewsSection";
 import ServicesSection from "./components/ServicesSection";
@@ -18,6 +20,8 @@ function App() {
 <HeroSection />
 <JourneySection />
 <VideoSection />
+<AnimatedVideosSection />
+<ECardsSection />
 <CardsSection />
 <HighlightsSection />
 <ReviewsSection />

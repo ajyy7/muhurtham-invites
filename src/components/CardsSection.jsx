@@ -12,7 +12,7 @@ const cards = [
 export default function CardsSection() {
   return (
     <section id="gallery" className="cards-section">
-      <h2 className="cards-title">Our Beautiful Invites</h2>
+      <h2 className="cards-title">For Your Celebrations</h2>
 
       <div className="cards-scroll">
         {cards.map((c, idx) => (
@@ -22,7 +22,7 @@ export default function CardsSection() {
             </div>
             <div className="card-body">
               <h4 className="card-title">{c.title}</h4>
-              <p className="card-desc">{c.description}</p>
+              <h6 class="card-desc">{c.description}</h6>
             </div>
           </article>
         ))}
