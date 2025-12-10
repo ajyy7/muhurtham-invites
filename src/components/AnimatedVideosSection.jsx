@@ -1,27 +1,27 @@
 import React from "react";
 import "./AnimatedVideosSection.css";
 
+import video01 from "../assets/animated-videos/video01.mp4";
+
 const AnimatedVideosSection = () => {
-  const animatedVideos = [
-    { id: "01", src: "/src/assets/animated-videos/video01.mp4" }
+  const videos = [
+    { id: "01", src: video01 }
   ];
 
   return (
-    <section className="animated-section">
-      <h2 className="animated-title">Animated Videos (₹499/-)</h2>
+    <section className="animated-videos-section">
+      <h2 className="animated-title">Animated Videos (₹499/- per card)</h2>
 
       <div className="animated-scroll">
-        {animatedVideos.map((video) => (
-          <div key={video.id} className="animated-card">
+        {videos.map((vid) => (
+          <div key={vid.id} className="video-card">
             <video
-              src={video.src}
               className="animated-video"
-              autoPlay
-              loop
-              muted
-              playsInline
+              src={vid.src}
+              controls
+              preload="metadata"
             />
-            <div className="video-number">{video.id}</div>
+            <div className="video-number">{vid.id}</div>
           </div>
         ))}
       </div>
