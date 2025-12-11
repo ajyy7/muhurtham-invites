@@ -46,3 +46,13 @@
   border-radius: 6px;
   font-size: 0.85rem;
 }
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-member {
+  flex: 0 0 40%;
+}
+
