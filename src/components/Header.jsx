@@ -7,6 +7,11 @@ function Header() {
   const [contactOpen, setContactOpen] = useState(false);
   const menuRef = useRef(null);
 
+  // WhatsApp Auto Message (URL Encoded)
+  const autoMessage = encodeURIComponent(
+    "Hi, I am interested in your invitation designs. Please share more details."
+  );
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -38,7 +43,7 @@ function Header() {
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        {/* Mobile Call Icon */}
+        {/* Mobile Icon */}
         <div className="call-icon" onClick={() => setContactOpen(!contactOpen)}>
           <FiPhoneCall size={22} color="#6a0019" />
         </div>
@@ -55,9 +60,9 @@ function Header() {
               <span>Call Us</span>
             </a>
 
-            {/* WhatsApp */}
+            {/* WhatsApp with Auto Message */}
             <a
-              href="https://wa.me/918547491297"
+              href={`https://wa.me/918547491297?text=${autoMessage}`}
               target="_blank"
               rel="noopener noreferrer"
               className="popup-link"
