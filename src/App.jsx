@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import JourneySection from "./components/JourneySection";
-import VideoSection from "./components/VideoSection";
 import AnimatedVideosSection from "./components/AnimatedVideosSection";
 import ECardsSection from "./components/ECardsSection";
+import VideoSection from "./components/VideoSection";
 import CardsSection from "./components/CardsSection";
-import ReviewsSection from "./components/ReviewsSection";
+/* import ReviewsSection from "./components/ReviewsSection"; */
 import ServicesSection from "./components/ServicesSection";
+import JourneySection from "./components/JourneySection";
 import TeamSection from "./components/TeamSection";
 import HighlightsSection from "./components/HighlightsSection";
 import Footer from "./components/Footer";
@@ -18,14 +18,13 @@ function App() {
     <div className="app">
       <Header />
 <HeroSection />
-<JourneySection />
-<VideoSection />
 <AnimatedVideosSection />
 <ECardsSection />
+<VideoSection />
 <CardsSection />
 <HighlightsSection />
-<ReviewsSection />
 <ServicesSection />
+<JourneySection />
 <TeamSection />
 <Footer />
     </div>
