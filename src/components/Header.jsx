@@ -9,7 +9,7 @@ function Header() {
 
   // WhatsApp Auto Message (URL Encoded)
   const autoMessage = encodeURIComponent(
-    "Hi, I am interested in your invitation designs. Please share more details."
+    "Hi! I’m looking for wedding cards and animated invites. Please share more details. 🥰✨"
   );
 
   useEffect(() => {
